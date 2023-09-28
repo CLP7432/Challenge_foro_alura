@@ -1,4 +1,11 @@
 # Challenge_foro_alura
+
+Link de descarga de archivo de exportacion de Insomnia:
+
+https://drive.google.com/file/d/1XsXJhkAxuVE9BH4apN83wSenjdlFRra-/view?usp=sharing
+
+
+
 Foro Alura
 
 INSTRUCCIONES DE USO - Repositorio README del Proyecto Foro Alura
