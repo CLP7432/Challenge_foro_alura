@@ -21,11 +21,17 @@ A continuación, se detallan los pasos fundamentales para configurar y emplear e
 bashCopy code
 git clone https://github.com/tu-usuario/Challenge_foro_alura.git 
 2.	Configurar la Base de Datos: En primer lugar, ejecute el programa para crear la base de datos y las tablas correspondientes. Una vez creada la base de datos, acceda a ella a través de su administrador de bases de datos preferido y diríjase a la tabla de usuarios. A continuación, deberá crear un usuario mediante la opción de inserción:
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/18812d87-0d4c-4922-8c7d-e14c7438304a)
 
 •	Elija un nombre de usuario a su gusto; en mi caso, empleé "Marco".
 •	Para la contraseña, utilice el sitio web https://www.browserling.com/tools/bcrypt para encriptarla. Ingrese su contraseña en el campo "Password" y haga clic en "Bcrypt" para generar el resultado encriptado. Luego, copie dicho resultado y péguelo en el campo de contraseña de la tabla de usuarios que está creando.
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/4546f938-d507-42a1-ad0b-cd3a25b4e9c6)
+
  
 En el campo de correo electrónico, puede proporcionar el que prefiera, y en el campo "activo", ingrese el número 1 para indicar que el usuario está activo.
+
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/ee7943a7-4883-459d-ae15-2ba3d0d3ef74)
+
  
 
 3.	Ejecutar la Aplicación: Inicie la aplicación Spring para poner en marcha la API REST. 
@@ -35,15 +41,19 @@ En el campo de correo electrónico, puede proporcionar el que prefiera, y en el 
 
 A modo de ejemplo, creemos un curso, un tópico y una respuesta. En primer lugar, descargue el archivo de Insomniac que contiene las consultas HTTP y, a continuación, impórtelo en Insomniac.
 Ahora, realicemos una consulta de inicio de sesión de usuario y complete el JSON con su nombre de usuario y contraseña sin encriptar. Luego, haga clic en "Send" para obtener un token, que deberá copiar. Este token deberá pegarse en cada solicitud que desee realizar, en la sección "Auth" bajo "Bearer Token".
+
+ ![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/ff0c8a25-e41b-4846-a844-7033ba826265)
  
 A continuación, en el JSON, podemos crear un curso indicando el nombre y la categoría. Haga clic en el botón "Send" y debería obtener una respuesta con el código 201.
 
 
-
-
 Ese token lo deberas pegar en cada petición que se quiera hacer, en la parte de Auth, Bearer Token y pegar el token en “Token”
  
- 
+
+ ![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/bbaf08b3-b2eb-4d0f-a668-127104258570)
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/045b7007-6c8e-4ba3-ba58-4ace7ddfb861)
+
+
 
 Si examinamos la base de datos, veremos la lista de cursos en el servidor. Si lo desea, puede crear más cursos a su discreción.
 Finalmente, procedamos a crear un tópico en el curso de C++.
@@ -52,19 +62,31 @@ Finalmente, procedamos a crear un tópico en el curso de C++.
 
 Primero deberás descargar el archivo de insomiac que contendrá las consultas http
 Importarlo en Insomiac y listo.
+
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/32654e1c-4fc7-495f-a9b4-d626298bc7d3)
+
  
 Dar click en botón send y debería aparecer algo asi con el código 201
  
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/5527dea1-8ff5-45ec-9c3e-6a56f5f58c0a)
 
 
 
 
 Si revisamos la base de datos:
+
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/ceb1d102-2fc7-41ff-a8e6-7ec0019fbed8)
+
  
 Vamos a listar los cursos en el servidor, si es de tu preferencia puedes crear más cursos
- 
 
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/e1d482ff-5031-4cf2-84d8-70580a55d5eb)
+
+ 
 Ahora vamos a crear un tópico en el curso de java
+
+![image](https://github.com/CLP7432/Challenge_foro_alura/assets/121730557/f2f739d0-1fb9-4881-8ee8-40c1308cafac)
+
  
 Esto concluye la demostración. Si desea explorar todas las peticiones posibles, puede hacerlo siguiendo el mismo procedimiento. Le invitamos a crear una respuesta para un tópico y a explorar los datos mediante los métodos GET, PUT, DELETE y POST.
 
