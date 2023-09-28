@@ -16,8 +16,8 @@ CREATE TABLE usuarios (
 -- Definición de tabla para la clase 'Topico'
 CREATE TABLE topicos (
     id BIGINT NOT NULL AUTO_INCREMENT,
-    titulo VARCHAR(255) not null ,
-    mensaje VARCHAR(255) not null ,
+    titulo VARCHAR(255) not null unique,
+    mensaje VARCHAR(255) not null unique,
     fecha_creacion datetime not null ,
     status VARCHAR(255) not null ,
     curso_id BIGINT not null ,
