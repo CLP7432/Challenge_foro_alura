@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ForoAluraApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ForoAluraApplication.class, args);//fghfghfghfgb
+		SpringApplication.run(ForoAluraApplication.class, args);
 	}
 
 }
